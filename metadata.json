@@ -1,0 +1,6 @@
+{
+  "name": "Metro Mumbai",
+  "description": "Smart Metro Guide for Mumbai Metro corridors with real graph routing (BFS/Dijkstra), station search, interactive metro map, live timetable schedules, fares, and journey navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

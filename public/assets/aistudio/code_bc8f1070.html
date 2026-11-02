@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#eaf1ff", "surface-container-lowest": "#ffffff", "surface-bright": "#f8f9ff", "background": "#f8f9ff", "surface-tint": "#2151da", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "primary": "#0037b0", "on-secondary-container": "#5c647a", "on-surface": "#0b1c30", "on-tertiary-fixed": "#001d31", "secondary-container": "#dae2fd", "inverse-primary": "#b7c4ff", "surface": "#f8f9ff", "secondary-fixed-dim": "#bec6e0", "error": "#ba1a1a", "tertiary": "#004870", "on-background": "#0b1c30", "on-tertiary-fixed-variant": "#004b73", "surface-container-low": "#eff4ff", "on-primary-fixed": "#001551", "primary-container": "#1d4ed8", "primary-fixed-dim": "#b7c4ff", "on-error": "#ffffff", "tertiary-container": "#006194", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#3f465c", "error-container": "#ffdad6", "secondary-fixed": "#dae2fd", "on-error-container": "#93000a", "on-primary-container": "#cad3ff", "secondary": "#565e74", "surface-variant": "#d3e4fe", "on-primary-fixed-variant": "#0039b5", "surface-dim": "#cbdbf5", "outline": "#747686", "on-surface-variant": "#434655", "on-secondary-fixed": "#131b2e", "on-tertiary-container": "#b2d9ff", "inverse-surface": "#213145", "tertiary-fixed-dim": "#93ccff", "tertiary-fixed": "#cce5ff", "outline-variant": "#c4c5d7", "surface-container": "#e5eeff", "primary-fixed": "dce1ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter": "1rem", "margin-lg": "1.5rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-lg": "1.5rem", "margin-sm": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem" }, fontFamily: { "body-lg": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-label-md text-label-md text-on-surface tracking-tight">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="font-label-sm text-label-sm tracking-tight">5G</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_5_bar</span></div></div><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-margin-sm"><img alt="Metro Mumbai Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X6ivMDDeA8k6v0imKDlgy6GNGjG3UoT6dhqZMi3xp5Y90h7iZTYd_WN0qDWXknl5wZd7GNqzMWPrjSXpkfFcHPSj8fdvWWSsyCcksKTMcpPbi4dxYSUScTqzilaRDN5NZkLtL-J7gD3Ewwl0xwAzpcdOaVfSDWMqByUuPPxBkijdldAgba3zs00X0mm1WBD4NzDqVk-AlkKtzffdPbTgIhgK7ffjpa6CyP9E1166aTcQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Metro Mumbai</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Routes</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Live Transit Alert Bar -->
+<div class="px-margin pt-space-xs pb-space-sm">
+<div class="flex items-center justify-between bg-surface-container-high px-space-md py-space-xs rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Peak Frequency Active • Line 1 &amp; Line 7 synced</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 shrink-0">
+        Live Tracking <span class="material-symbols-outlined text-[14px]">sensors</span>
+</span>
+</div>
+</div>
+<!-- Origin / Destination Route Summary Card -->
+<section class="px-margin mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Planned Trip</span>
+<button class="flex items-center gap-1 text-primary bg-secondary-container/60 hover:bg-secondary-container px-space-sm py-0.5 rounded-full transition-all active:scale-95" id="reverse-btn">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-300" id="reverse-icon">swap_vert</span>
+<span class="font-label-sm text-label-sm">Reverse</span>
+</button>
+</div>
+<!-- Station Journey Pins -->
+<div class="flex items-start gap-space-md relative">
+<div class="flex flex-col items-center pt-1 self-stretch">
+<div class="w-3.5 h-3.5 rounded-full bg-primary-container flex items-center justify-center shadow-sm">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+<div class="w-0.5 flex-1 bg-surface-container-highest my-1"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-error text-[10px]">location_on</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="origin-name">Versova</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Line 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Platform 2 • Westbound Hub</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="dest-name">Gundavali / Andheri E</span>
+<span class="px-2 py-0.5 rounded-full bg-error/10 text-error font-label-sm text-label-sm">Line 7</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Concourse Level • Skywalk Linked</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Route Preference Filter Chips -->
+<div class="mt-space-md pt-space-sm flex gap-space-xs overflow-x-auto no-scrollbar" id="chip-filters">
+<button class="filter-chip active-filter flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm shrink-0 transition-all" data-type="fastest">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+          Fastest Route
+        </button>
+<button class="filter-chip flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high shrink-0 transition-all" data-type="interchanges">
+<span class="material-symbols-outlined text-[16px]">transfer_within_a_station</span>
+          Fewest Interchanges
+        </button>
+<button class="filter-chip flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high shrink-0 transition-all" data-type="fare">
+<span class="material-symbols-outlined text-[16px]">currency_rupee</span>
+          Lowest Fare
+        </button>
+</div>
+</div>
+</section>
+<!-- Route Results List -->
+<div class="px-margin flex flex-col gap-space-md pb-space-lg">
+<!-- Card 1: RECOMMENDED FASTEST ROUTE -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-lg transition-transform duration-200 hover:-translate-y-0.5 relative overflow-hidden" id="card-fastest">
+<!-- Glow Accent Header -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary-container"></div>
+<!-- High-Priority Badge & Live Indicator -->
+<div class="flex items-center justify-between pt-1 mb-space-sm">
+<div class="flex items-center gap-1.5 bg-secondary-container px-2.5 py-1 rounded-full text-on-secondary-fixed font-label-sm text-label-sm shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+          RECOMMENDED • FASTEST ROUTE
+        </div>
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] animate-pulse">timer</span>
+          Next in 3m
+        </div>
+</div>
+<!-- Key Trip Numbers (Duration & Fare) -->
+<div class="flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-display-md text-display-md text-on-surface tracking-tight">28</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant ml-0.5">mins</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>11 stations</span>
+<span>•</span>
+<span class="text-primary font-label-sm text-label-sm">1 interchange</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight">₹30</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">MMRDA Smart Card</span>
+</div>
+</div>
+<!-- Visual Line Sequence Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-2">
+<span>Transit Sequence</span>
+<span class="text-tertiary">Direct Skywalk Bridge</span>
+</div>
+<div class="flex items-center gap-1">
+<!-- Segment 1: Line 1 Blue -->
+<div class="flex-[3] flex flex-col gap-1">
+<div class="h-3 rounded-full bg-primary-container relative flex items-center justify-center">
+<span class="text-[9px] font-bold text-on-primary uppercase tracking-tighter">Line 1</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span class="truncate max-w-[60px]">Versova</span>
+<span>8 stns</span>
+</div>
+</div>
+<!-- Connector: Transfer Footbridge -->
+<div class="flex-1 flex flex-col items-center gap-0.5 px-0.5">
+<div class="w-full flex items-center justify-center">
+<div class="h-2 w-full bg-surface-container-highest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-surface-variant">directions_walk</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">3m walk</span>
+</div>
+<!-- Segment 2: Line 7 Red -->
+<div class="flex-[2] flex flex-col gap-1">
+<div class="h-3 rounded-full bg-error relative flex items-center justify-center">
+<span class="text-[9px] font-bold text-on-error uppercase tracking-tighter">Line 7</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span class="truncate max-w-[60px]">WEH ➔ Gundavali</span>
+<span>1 stn</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Departure Frequency & Live Boarding -->
+<div class="flex items-center justify-between bg-surface-container px-space-md py-space-sm rounded-lg mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Departs Every 4 Mins</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Platform 2 • Air Conditioned Rake</div>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm">
+            Low Crowd
+          </span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary py-3 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.99]" onclick="toggleDetails(this)">
+<span>View Step-by-Step Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Expandable Steps Accordion Details (Hidden by default) -->
+<div class="hidden pt-space-md mt-space-md transition-all flex flex-col gap-space-sm" id="route-details-1">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-label-sm font-label-sm shrink-0">1</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Board Line 1 (Blue) at Versova</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Travel 8 stops towards Ghatkopar. Alight at Western Express Highway (WEH) Metro.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center text-label-sm font-label-sm shrink-0">2</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Transfer via High-Speed Skywalk</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3-minute sheltered connector directly linked to Line 7 Gundavali Station concourse level.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-error text-on-error flex items-center justify-center text-label-sm font-label-sm shrink-0">3</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Arrive Gundavali / Andheri East (Line 7)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Exit 1 directly to Western Express Highway Northbound corridor.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: ALTERNATIVE ROUTE VIA DN NAGAR & DAHISAR -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-md transition-transform duration-200 hover:-translate-y-0.5" id="card-alt-dahisar">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm">
+          ALTERNATIVE • VIA DN NAGAR &amp; DAHISAR
+        </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Every 6 mins</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-display-md text-display-md text-on-surface tracking-tight">46</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant ml-0.5">mins</span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span>22 stations</span>
+<span>•</span>
+<span class="text-tertiary font-label-sm text-label-sm">2 interchanges</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">₹50</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard Token</span>
+</div>
+</div>
+<!-- Segment sequence: Line 1 -> Line 2A Yellow -> Line 7 Red -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md">
+<div class="flex items-center gap-1.5">
+<div class="flex-1 flex flex-col gap-1">
+<div class="h-2.5 rounded-full bg-primary-container"></div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>L1 Blue</span>
+<span>1 stn</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<div class="flex-[3] flex flex-col gap-1">
+<div class="h-2.5 rounded-full bg-tertiary-container"></div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>L2A Yellow</span>
+<span>16 stns</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<div class="flex-1 flex flex-col gap-1">
+<div class="h-2.5 rounded-full bg-error"></div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>L7 Red</span>
+<span>5 stns</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 text-center">
+          Interchanges: DN Nagar (L1/L2A) + Dahisar East (L2A/L7)
+        </p>
+</div>
+<button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface py-2.5 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-colors">
+<span>Select This Route</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</article>
+<!-- Card 3: AUTONOMOUS TIP • DIRECT METRO + SKYWALK WALKWAY -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-md" id="card-tip">
+<div class="flex items-center gap-2 mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">AUTONOMOUS TRANSIT TIP</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Direct Line 1 to WEH + Skywalk Walkway</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Recommended for quick transit during heavy peak intervals. Exiting via WEH concourse directly through the all-weather elevated bridge avoids ticket re-queues.
+      </p>
+<!-- Multi-modal Route Comparison Table -->
+<div class="bg-surface-container-low rounded-xl p-space-sm overflow-hidden mb-space-sm">
+<div class="grid grid-cols-5 text-on-surface-variant font-label-sm text-label-sm pb-2 text-center">
+<div class="text-left font-label-md text-label-md text-on-surface">Mode</div>
+<div>Dist</div>
+<div>Time</div>
+<div>Fare</div>
+<div>Crowd</div>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Row 1: Metro Line 1 + Bridge (Recommended) -->
+<div class="grid grid-cols-5 items-center text-center p-1.5 rounded-lg bg-surface-container-lowest shadow-xs text-on-surface">
+<div class="text-left flex items-center gap-1 font-label-md text-label-md text-primary truncate">
+<span class="material-symbols-outlined text-[16px]">train</span>
+<span>Metro 1+7</span>
+</div>
+<div class="font-body-sm text-body-sm">8.4 km</div>
+<div class="font-label-md text-label-md text-primary">28m</div>
+<div class="font-label-md text-label-md">₹30</div>
+<div>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Low</span>
+</div>
+</div>
+<!-- Row 2: Metro Via Dahisar -->
+<div class="grid grid-cols-5 items-center text-center p-1.5 rounded-lg text-on-surface-variant">
+<div class="text-left flex items-center gap-1 font-label-md text-label-md text-on-surface truncate">
+<span class="material-symbols-outlined text-[16px]">subway</span>
+<span>Metro Loop</span>
+</div>
+<div class="font-body-sm text-body-sm">24 km</div>
+<div class="font-body-sm text-body-sm">46m</div>
+<div class="font-body-sm text-body-sm">₹50</div>
+<div>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">Mod</span>
+</div>
+</div>
+<!-- Row 3: Road Auto-Rickshaw / Taxi Comparison -->
+<div class="grid grid-cols-5 items-center text-center p-1.5 rounded-lg text-on-surface-variant">
+<div class="text-left flex items-center gap-1 font-label-md text-label-md text-on-surface truncate">
+<span class="material-symbols-outlined text-[16px]">local_taxi</span>
+<span>Road Cab</span>
+</div>
+<div class="font-body-sm text-body-sm">9.8 km</div>
+<div class="font-body-sm text-body-sm text-error">45-55m</div>
+<div class="font-body-sm text-body-sm">₹160+</div>
+<div>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">Heavy</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm px-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">eco</span>
+          Saves 1.8 kg CO₂ vs Cab
+        </span>
+<a class="text-primary font-label-sm text-label-sm flex items-center hover:underline" href="#">
+          Station Skywalk Map <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Quick Purchase Action Card -->
+<section class="bg-primary text-on-primary rounded-xl p-space-md shadow-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wide">Ready to Go?</span>
+<span class="font-headline-sm text-headline-sm text-on-primary leading-tight">Generate QR Metro Ticket</span>
+<span class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Instant scan at Versova AFC Gates</span>
+</div>
+<button class="bg-surface-container-lowest text-primary px-space-md py-2.5 rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all active:scale-95 shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span>Buy ₹30</span>
+</button>
+</section>
+</div>
+<script>
+    // Toggle details in the Recommended Card
+    function toggleDetails(btn) {
+      const details = document.getElementById('route-details-1');
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        btn.querySelector('span:first-child').innerText = 'Hide Step-by-Step Details';
+        btn.querySelector('.material-symbols-outlined').innerText = 'keyboard_arrow_up';
+      } else {
+        details.classList.add('hidden');
+        btn.querySelector('span:first-child').innerText = 'View Step-by-Step Details';
+        btn.querySelector('.material-symbols-outlined').innerText = 'arrow_forward';
+      }
+    }
+
+    // Reverse Origin & Destination interaction
+    const reverseBtn = document.getElementById('reverse-btn');
+    const originElem = document.getElementById('origin-name');
+    const destElem = document.getElementById('dest-name');
+    const reverseIcon = document.getElementById('reverse-icon');
+
+    if (reverseBtn && originElem && destElem) {
+      let isReversed = false;
+      reverseBtn.addEventListener('click', () => {
+        isReversed = !isReversed;
+        reverseIcon.classList.toggle('rotate-180');
+        
+        const temp = originElem.innerText;
+        originElem.innerText = destElem.innerText;
+        destElem.innerText = temp;
+      });
+    }
+
+    // Filter Chips toggling
+    const filterButtons = document.querySelectorAll('.filter-chip');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="[&amp;_.indicator]:bg-secondary-container text-on-surface font-label-md"><div class="flex justify-around items-center h-20 px-2"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="home" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">directions_subway</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-all group [&amp;_.indicator]:bg-secondary-container text-on-surface font-label-md" data-path="routes" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">alt_route</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Routes</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="metro-map" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">map</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Map</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="saved" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmark</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="more" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">more_horiz</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">More</span></a></div><div class="w-full flex justify-center pb-2 pt-0.5"><div class="w-32 h-1 rounded-full bg-on-surface-variant/40"></div></div></nav></body></html>

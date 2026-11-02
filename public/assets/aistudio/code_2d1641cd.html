@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#eaf1ff", "surface-container-lowest": "#ffffff", "surface-bright": "#f8f9ff", "background": "#f8f9ff", "surface-tint": "#2151da", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "primary": "#0037b0", "on-secondary-container": "#5c647a", "on-surface": "#0b1c30", "on-tertiary-fixed": "#001d31", "secondary-container": "#dae2fd", "inverse-primary": "#b7c4ff", "surface": "#f8f9ff", "secondary-fixed-dim": "#bec6e0", "error": "#ba1a1a", "tertiary": "#004870", "on-background": "#0b1c30", "on-tertiary-fixed-variant": "#004b73", "surface-container-low": "#eff4ff", "on-primary-fixed": "#001551", "primary-container": "#1d4ed8", "primary-fixed-dim": "#b7c4ff", "on-error": "#ffffff", "tertiary-container": "#006194", "on-secondary": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#3f465c", "error-container": "#ffdad6", "secondary-fixed": "#dae2fd", "on-error-container": "#93000a", "on-primary-container": "#cad3ff", "secondary": "#565e74", "surface-variant": "#d3e4fe", "on-primary-fixed-variant": "#0039b5", "surface-dim": "#cbdbf5", "outline": "#747686", "on-surface-variant": "#434655", "on-secondary-fixed": "#131b2e", "on-tertiary-container": "#b2d9ff", "inverse-surface": "#213145", "tertiary-fixed-dim": "#93ccff", "tertiary-fixed": "#cce5ff", "outline-variant": "#c4c5d7", "surface-container": "#e5eeff", "primary-fixed": "dce1ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter": "1rem", "margin-lg": "1.5rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-lg": "1.5rem", "margin-sm": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "gutter-sm": "0.75rem" }, fontFamily: { "body-lg": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-label-md text-label-md text-on-surface tracking-tight">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="font-label-sm text-label-sm tracking-tight">5G</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_5_bar</span></div></div><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-margin-sm"><img alt="Metro Mumbai Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X6ivMDDeA8k6v0imKDlgy6GNGjG3UoT6dhqZMi3xp5Y90h7iZTYd_WN0qDWXknl5wZd7GNqzMWPrjSXpkfFcHPSj8fdvWWSsyCcksKTMcpPbi4dxYSUScTqzilaRDN5NZkLtL-J7gD3Ewwl0xwAzpcdOaVfSDWMqByUuPPxBkijdldAgba3zs00X0mm1WBD4NzDqVk-AlkKtzffdPbTgIhgK7ffjpa6CyP9E1166aTcQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Metro Mumbai</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Metro Map</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full relative select-none">
+<!-- Top Search & Quick Network Filters -->
+<div class="w-full px-margin pt-space-xs pb-space-sm z-30 flex flex-col gap-space-sm">
+<!-- Search Bar Surface -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-xs flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg flex items-center justify-center text-primary bg-surface-container-low shrink-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none px-space-xs" id="stationSearchInput" placeholder="Find station on map..." type="text"/>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors hidden" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="h-6 w-px bg-surface-container-high mx-0.5"></div>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg text-primary hover:bg-surface-container-low transition-colors shrink-0" id="voiceSearchBtn">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Line Filter Pills Ribbon -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="line-chip active flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary text-label-md font-label-md shrink-0 shadow-sm transition-all" data-line-filter="all">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+<span>All Lines</span>
+</button>
+<button class="line-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-md font-label-md shrink-0 shadow-sm hover:bg-surface-container-high transition-all" data-line-filter="line1">
+<span class="w-2.5 h-2.5 rounded-full bg-[#0284C7]"></span>
+<span>Line 1 Blue</span>
+</button>
+<button class="line-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-md font-label-md shrink-0 shadow-sm hover:bg-surface-container-high transition-all" data-line-filter="line2a">
+<span class="w-2.5 h-2.5 rounded-full bg-[#EAB308]"></span>
+<span>Line 2A Yellow</span>
+</button>
+<button class="line-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-md font-label-md shrink-0 shadow-sm hover:bg-surface-container-high transition-all" data-line-filter="line3">
+<span class="w-2.5 h-2.5 rounded-full bg-[#06B6D4]"></span>
+<span>Line 3 Aqua</span>
+</button>
+<button class="line-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface text-label-md font-label-md shrink-0 shadow-sm hover:bg-surface-container-high transition-all" data-line-filter="line7">
+<span class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></span>
+<span>Line 7 Red</span>
+</button>
+</div>
+</div>
+<!-- Metro Canvas Viewport Area -->
+<div class="relative w-full h-[520px] overflow-hidden bg-surface-container-low flex items-center justify-center cursor-grab active:cursor-grabbing" id="mapViewport">
+<!-- Soft Map Grid Texture Underlay -->
+<div class="absolute inset-0 opacity-[0.45] pointer-events-none" style="background-image: radial-gradient(circle, #747686 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Coastline & Geography Accents (Mumbai Peninsula Subtle Stylization) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-25" preserveaspectratio="none" viewbox="0 0 400 520">
+<path d="M 40,0 Q 90,140 70,260 T 30,520 L 0,520 L 0,0 Z" fill="#b2d9ff"></path>
+<path d="M 360,300 Q 320,400 370,520 L 400,520 L 400,300 Z" fill="#b2d9ff"></path>
+<!-- Arabian Sea Label -->
+<text fill="#004870" font-family="Plus Jakarta Sans" font-size="10" letter-spacing="3" opacity="0.6" transform="rotate(-90 36 440)" x="36" y="440">ARABIAN SEA</text>
+</svg>
+<!-- Floating Map Controls (Right Side) -->
+<div class="absolute right-4 top-4 z-20 flex flex-col gap-2 shadow-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-1.5">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" id="zoomInBtn" title="Zoom In">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+<div class="h-px w-full bg-surface-container-high"></div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" id="zoomOutBtn" title="Zoom Out">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<div class="h-px w-full bg-surface-container-high"></div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-primary hover:bg-surface-container transition-colors" id="recenterBtn" title="Current Location">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">my_location</span>
+</button>
+<div class="h-px w-full bg-surface-container-high"></div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" id="modeToggleBtn" title="Toggle Schematic">
+<span class="material-symbols-outlined text-[20px]">schema</span>
+</button>
+</div>
+<!-- Live Status Pill Floating (Left Top) -->
+<div class="absolute left-4 top-4 z-20 flex items-center gap-2 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+<span class="text-label-sm font-label-sm text-on-surface tracking-wide">All 4 Lines Operational</span>
+</div>
+<!-- Interactive Interactive Schematic Canvas Transform Container -->
+<div class="w-[390px] h-[500px] transition-transform duration-200 ease-out origin-center scale-100 flex items-center justify-center" id="diagramContainer">
+<svg class="w-full h-full overflow-visible" id="metroSvg" viewbox="0 0 390 500">
+<defs>
+<!-- Junction Drop Glow Filter -->
+<filter height="140%" id="junctionGlow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="2" flood-opacity="0.18" stddeviation="3"></fedropshadow>
+</filter>
+</defs>
+<!-- ================= RAIL TRACKS (CORRIDORS) ================= -->
+<!-- Line 2A Yellow: Dahisar East to DN Nagar (Runs down Western Corridor) -->
+<g class="line-track transition-opacity duration-300" id="track-line2a">
+<path d="M 140,40 L 140,240" fill="none" stroke="#EAB308" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+<!-- Direction Accent Arrows -->
+<path d="M 140,110 L 140,120" stroke="#FFFFFF" stroke-dasharray="2 6" stroke-linecap="round" stroke-width="2"></path>
+</g>
+<!-- Line 7 Red: Dahisar East to Gundavali (Eastern Western Express Highway Line) -->
+<g class="line-track transition-opacity duration-300" id="track-line7">
+<path d="M 140,40 L 250,40 L 250,240" fill="none" stroke="#EF4444" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+</g>
+<!-- Line 1 Blue: Versova -> DN Nagar -> Andheri -> Gundavali/WEH -> Marol Naka -> Ghatkopar -->
+<g class="line-track transition-opacity duration-300" id="track-line1">
+<path d="M 70,240 L 330,240" fill="none" stroke="#0284C7" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+</g>
+<!-- Line 3 Aqua Cyan: Aarey JVLR -> SEEPZ -> Marol Naka -> Airport T2 -> Airport T1 -> BKC -->
+<g class="line-track transition-opacity duration-300" id="track-line3">
+<path d="M 280,140 L 280,240 L 220,320 L 170,390 L 170,460" fill="none" stroke="#06B6D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+</g>
+<!-- ================= STATIONS & STOP NODES ================= -->
+<!-- LINE 2A STATIONS -->
+<g class="line2a-nodes">
+<circle class="cursor-pointer station-node" cx="140" cy="100" data-id="kandivali" data-lines="Line 2A (Yellow)" data-name="Kandivali West" fill="#FFFFFF" r="4.5" stroke="#EAB308" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="end" x="128" y="104">Kandivali W</text>
+<circle class="cursor-pointer station-node" cx="140" cy="160" data-id="malad" data-lines="Line 2A (Yellow)" data-name="Malad West" fill="#FFFFFF" r="4.5" stroke="#EAB308" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="end" x="128" y="164">Malad W</text>
+</g>
+<!-- LINE 7 STATIONS -->
+<g class="line7-nodes">
+<circle class="cursor-pointer station-node" cx="250" cy="100" data-id="magathane" data-lines="Line 7 (Red)" data-name="Magathane" fill="#FFFFFF" r="4.5" stroke="#EF4444" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="start" x="262" y="104">Magathane</text>
+<circle class="cursor-pointer station-node" cx="250" cy="160" data-id="goregaon" data-lines="Line 7 (Red)" data-name="Goregaon East" fill="#FFFFFF" r="4.5" stroke="#EF4444" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="start" x="262" y="164">Goregaon E</text>
+</g>
+<!-- LINE 1 STATIONS -->
+<g class="line1-nodes">
+<circle class="cursor-pointer station-node" cx="70" cy="240" data-id="versova" data-lines="Line 1 (Blue)" data-name="Versova" fill="#FFFFFF" r="5" stroke="#0284C7" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="70" y="262">Versova</text>
+<circle class="cursor-pointer station-node" cx="185" cy="240" data-id="andheri" data-lines="Line 1 (Blue)" data-name="Andheri (Railway)" fill="#FFFFFF" r="4.5" stroke="#0284C7" stroke-width="3"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="185" y="230">Andheri</text>
+<circle class="cursor-pointer station-node" cx="330" cy="240" data-id="ghatkopar" data-lines="Line 1 (Blue)" data-name="Ghatkopar (Central)" fill="#FFFFFF" r="5" stroke="#0284C7" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="330" y="262">Ghatkopar</text>
+</g>
+<!-- LINE 3 (AQUA) STATIONS -->
+<g class="line3-nodes">
+<circle class="cursor-pointer station-node" cx="280" cy="140" data-id="aarey" data-lines="Line 3 (Aqua)" data-name="Aarey JVLR" fill="#FFFFFF" r="5" stroke="#06B6D4" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="start" x="292" y="144">Aarey JVLR</text>
+<circle class="cursor-pointer station-node" cx="280" cy="190" data-id="seepz" data-lines="Line 3 (Aqua)" data-name="SEEPZ Village" fill="#FFFFFF" r="4.5" stroke="#06B6D4" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="start" x="292" y="194">SEEPZ</text>
+<circle class="cursor-pointer station-node" cx="220" cy="320" data-id="t2" data-lines="Line 3 (Aqua)" data-name="CSMIA Airport T2" fill="#FFFFFF" r="5" stroke="#06B6D4" stroke-width="3"></circle>
+<text fill="#004870" font-family="Inter" font-size="10" font-weight="600" text-anchor="start" x="232" y="324">Airport T2 ✈</text>
+<circle class="cursor-pointer station-node" cx="170" cy="390" data-id="t1" data-lines="Line 3 (Aqua)" data-name="CSMIA Airport T1" fill="#FFFFFF" r="5" stroke="#06B6D4" stroke-width="3"></circle>
+<text fill="#434655" font-family="Inter" font-size="10" font-weight="500" text-anchor="start" x="182" y="394">Airport T1</text>
+<circle class="cursor-pointer station-node" cx="170" cy="460" data-id="bkc" data-lines="Line 3 (Aqua)" data-name="BKC (Bandra Kurla)" fill="#FFFFFF" r="6" stroke="#06B6D4" stroke-width="3.5"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" text-anchor="end" x="158" y="465">BKC Terminal</text>
+</g>
+<!-- ================= MAJOR INTERCHANGES ================= -->
+<!-- Interchange 1: Dahisar East (Line 2A & Line 7) -->
+<g class="interchange-group cursor-pointer station-node" data-id="dahisar" data-lines="Line 2A (Yellow) &amp; Line 7 (Red)" data-name="Dahisar East Interchange" filter="url(#junctionGlow)">
+<rect fill="#0b1c30" height="18" rx="9" width="18" x="131" y="31"></rect>
+<circle cx="140" cy="40" fill="#FFFFFF" r="6"></circle>
+<circle cx="140" cy="40" fill="#EAB308" r="3"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10.5" font-weight="700" text-anchor="middle" x="140" y="24">Dahisar East</text>
+</g>
+<!-- Interchange 2: DN Nagar (Line 1 & Line 2A) -->
+<g class="interchange-group cursor-pointer station-node" data-id="dnnagar" data-lines="Line 1 (Blue) &amp; Line 2A (Yellow)" data-name="DN Nagar Interchange" filter="url(#junctionGlow)">
+<circle cx="140" cy="240" fill="#0b1c30" r="10"></circle>
+<circle cx="140" cy="240" fill="#FFFFFF" r="6.5"></circle>
+<circle cx="140" cy="240" fill="#0284C7" r="3"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10.5" font-weight="700" text-anchor="middle" x="140" y="264">DN Nagar</text>
+</g>
+<!-- Interchange 3: WEH / Gundavali (Line 1 & Line 7) -->
+<g class="interchange-group cursor-pointer station-node" data-id="gundavali" data-lines="Line 1 (Blue) &amp; Line 7 (Red)" data-name="WEH / Gundavali Interchange" filter="url(#junctionGlow)">
+<circle cx="250" cy="240" fill="#0b1c30" r="10"></circle>
+<circle cx="250" cy="240" fill="#FFFFFF" r="6.5"></circle>
+<circle cx="250" cy="240" fill="#EF4444" r="3"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10.5" font-weight="700" text-anchor="middle" x="250" y="264">Gundavali / WEH</text>
+</g>
+<!-- Interchange 4: Marol Naka (Active Highlight - Line 1 & Line 3) -->
+<g class="interchange-group cursor-pointer station-node" data-id="marol" data-lines="Line 1 (Blue) &amp; Line 3 (Aqua Line)" data-name="Marol Naka Interchange" filter="url(#junctionGlow)" id="marolNode">
+<!-- Pulse Highlight Wave -->
+<circle class="animate-ping opacity-60" cx="280" cy="240" fill="none" id="pulseRing" r="18" stroke="#0037b0" stroke-width="2"></circle>
+<rect fill="#0037b0" height="24" rx="12" width="24" x="268" y="228"></rect>
+<circle cx="280" cy="240" fill="#FFFFFF" r="8"></circle>
+<circle cx="280" cy="240" fill="#06B6D4" r="4.5"></circle>
+<!-- Pin Label -->
+<text fill="#0037b0" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" text-anchor="middle" x="280" y="220">Marol Naka</text>
+</g>
+</svg>
+</div>
+<!-- Mini Visual Map Key Pill (Bottom Left overlay) -->
+<div class="absolute left-4 bottom-4 z-20 flex items-center gap-2 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1.5 rounded-lg shadow-sm text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#0284C7]"></span>L1</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#EAB308]"></span>L2A</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#06B6D4]"></span>L3</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#EF4444]"></span>L7</span>
+</div>
+</div>
+<!-- Bottom Sheet Overlay (Selected Station Preview) -->
+<div class="w-full px-margin -mt-4 z-30">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl p-space-md flex flex-col gap-space-sm relative">
+<!-- Drag handle indicator for sheet feel -->
+<div class="w-10 h-1 bg-surface-container-highest rounded-full self-center mb-0.5"></div>
+<!-- Station Name & Status Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="sheetStationTitle">Marol Naka Interchange</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="sheetStationSub">
+            Connects Line 1 (Blue) &amp; Line 3 (Aqua Line)
+          </p>
+</div>
+<!-- Interchange Badge -->
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm shrink-0">
+          Interchange
+        </span>
+</div>
+<!-- Departure Countdown Cards Box -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Live Next Trains</span>
+<span class="flex items-center gap-1 text-label-sm text-emerald-600 font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live GPS
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Departure 1: Line 1 -->
+<div class="bg-surface-container-lowest rounded-md p-2 flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#0284C7]"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">To Ghatkopar</span>
+</div>
+<div class="flex items-baseline justify-between mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary">2 <span class="font-label-sm text-label-sm text-on-surface-variant">min</span></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Plat 2</span>
+</div>
+</div>
+<!-- Departure 2: Line 3 -->
+<div class="bg-surface-container-lowest rounded-md p-2 flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#06B6D4]"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">To BKC (Aqua)</span>
+</div>
+<div class="flex items-baseline justify-between mt-0.5">
+<span class="font-headline-sm text-headline-sm text-[#006194]">4 <span class="font-label-sm text-label-sm text-on-surface-variant">min</span></span>
+<span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Plat 1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Station Amenities Quick Row -->
+<div class="flex items-center justify-between px-1 text-on-surface-variant text-body-sm font-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">accessible</span>
+<span>Step-free</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">escalator</span>
+<span>Escalators</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">atm</span>
+<span>ATMs &amp; Fare Gates</span>
+</div>
+</div>
+<!-- Action Buttons Pair -->
+<div class="flex items-center gap-space-xs mt-1">
+<button class="flex-1 h-12 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:opacity-95 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5" id="setStartBtn">
+<span class="material-symbols-outlined text-[20px]">trip_origin</span>
+<span>Set as Start</span>
+</button>
+<button class="flex-1 h-12 bg-surface-container-high text-primary font-label-lg text-label-lg rounded-lg hover:bg-surface-container-highest active:scale-[0.98] transition-all flex items-center justify-center gap-1.5" id="viewInfoBtn">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<span>Station Info</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initMetroInteractiveMap() {
+    let currentZoom = 1;
+    let isSchematic = true;
+    const diagram = document.getElementById('diagramContainer');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const recenterBtn = document.getElementById('recenterBtn');
+    const modeToggleBtn = document.getElementById('modeToggleBtn');
+    const searchInput = document.getElementById('stationSearchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const pulseRing = document.getElementById('pulseRing');
+
+    const sheetTitle = document.getElementById('sheetStationTitle');
+    const sheetSub = document.getElementById('sheetStationSub');
+    const setStartBtn = document.getElementById('setStartBtn');
+
+    // Zoom Controls
+    function applyTransform() {
+      diagram.style.transform = `scale(${currentZoom})`;
+    }
+
+    zoomInBtn?.addEventListener('click', () => {
+      if (currentZoom < 1.7) {
+        currentZoom += 0.2;
+        applyTransform();
+      }
+    });
+
+    zoomOutBtn?.addEventListener('click', () => {
+      if (currentZoom > 0.8) {
+        currentZoom -= 0.2;
+        applyTransform();
+      }
+    });
+
+    recenterBtn?.addEventListener('click', () => {
+      currentZoom = 1;
+      applyTransform();
+      // Animate Marol Naka highlight
+      selectStation('marol', 'Marol Naka Interchange', 'Connects Line 1 (Blue) & Line 3 (Aqua Line)');
+    });
+
+    modeToggleBtn?.addEventListener('click', () => {
+      isSchematic = !isSchematic;
+      modeToggleBtn.classList.toggle('text-primary', !isSchematic);
+      modeToggleBtn.classList.toggle('text-on-surface-variant', isSchematic);
+      modeToggleBtn.title = isSchematic ? "Schematic View" : "Geographic Route View";
+      // Give feedback vibration/feedback pulse
+      diagram.style.transform = `scale(${currentZoom * 0.98})`;
+      setTimeout(() => applyTransform(), 120);
+    });
+
+    // Station Selection Logic
+    function selectStation(id, name, subtext) {
+      if (sheetTitle) sheetTitle.textContent = name;
+      if (sheetSub) sheetSub.textContent = subtext || "Direct access & high-frequency service";
+      
+      // Update Pulse Ring position if coordinates match Marol or others
+      const node = document.querySelector(`[data-id="${id}"]`);
+      if (node && pulseRing) {
+        let cx = node.getAttribute('cx') || node.querySelector('circle')?.getAttribute('cx');
+        let cy = node.getAttribute('cy') || node.querySelector('circle')?.getAttribute('cy');
+        if (cx && cy) {
+          pulseRing.setAttribute('cx', cx);
+          pulseRing.setAttribute('cy', cy);
+        }
+      }
+    }
+
+    // Attach click to station nodes
+    document.querySelectorAll('.station-node').forEach(node => {
+      node.addEventListener('click', (e) => {
+        const id = node.getAttribute('data-id');
+        const name = node.getAttribute('data-name');
+        const lines = node.getAttribute('data-lines');
+        selectStation(id, name, lines ? `Connects ${lines}` : 'Active Station');
+      });
+    });
+
+    // Line Filter Pill Filtering
+    const chips = document.querySelectorAll('.line-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary', 'active');
+          c.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        chip.classList.add('bg-primary', 'text-on-primary', 'active');
+        chip.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+        const filter = chip.getAttribute('data-line-filter');
+        const tracks = {
+          line1: document.getElementById('track-line1'),
+          line2a: document.getElementById('track-line2a'),
+          line3: document.getElementById('track-line3'),
+          line7: document.getElementById('track-line7')
+        };
+
+        if (filter === 'all') {
+          Object.values(tracks).forEach(t => { if(t) t.style.opacity = '1'; });
+        } else {
+          Object.keys(tracks).forEach(key => {
+            if (tracks[key]) {
+              tracks[key].style.opacity = (key === filter) ? '1' : '0.2';
+            }
+          });
+        }
+      });
+    });
+
+    // Station Search Overlay Interaction
+    searchInput?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      clearSearchBtn.classList.toggle('hidden', query.length === 0);
+
+      if (query.length > 1) {
+        const match = Array.from(document.querySelectorAll('.station-node')).find(node => {
+          const name = (node.getAttribute('data-name') || '').toLowerCase();
+          return name.includes(query);
+        });
+
+        if (match) {
+          const id = match.getAttribute('data-id');
+          const name = match.getAttribute('data-name');
+          const lines = match.getAttribute('data-lines');
+          selectStation(id, name, lines);
+        }
+      }
+    });
+
+    clearSearchBtn?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+      }
+    });
+
+    setStartBtn?.addEventListener('click', () => {
+      const origText = setStartBtn.innerHTML;
+      setStartBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span><span>Selected as Start</span>`;
+      setStartBtn.classList.add('bg-emerald-600');
+      setTimeout(() => {
+        setStartBtn.innerHTML = origText;
+        setStartBtn.classList.remove('bg-emerald-600');
+      }, 1600);
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="[&amp;_.indicator]:bg-secondary-container text-on-surface font-label-md"><div class="flex justify-around items-center h-20 px-2"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="home" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">directions_subway</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="routes" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">alt_route</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Routes</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-all group [&amp;_.indicator]:bg-secondary-container text-on-surface font-label-md" data-path="metro-map" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">map</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Map</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="saved" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmark</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-all group" data-path="more" href="#"><div class="indicator px-4 py-1 rounded-full transition-all duration-200 flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">more_horiz</span></div><span class="font-label-md text-label-md mt-0.5 tracking-tight">More</span></a></div><div class="w-full flex justify-center pb-2 pt-0.5"><div class="w-32 h-1 rounded-full bg-on-surface-variant/40"></div></div></nav></body></html>
